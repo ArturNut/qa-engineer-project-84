@@ -3,9 +3,14 @@ test-cases:
   - summary: |
       Успешный поиск товаров по ключевому слову
   status: pass
+  - summary: |
+      Успешный поиск товаров по ключевому слову
+  status: pass
 bugreports: []
 
 test-cases:    
+  - summary: |
+      Успешный поиск товаров по названию категории
   - summary: |
       Успешный поиск товаров по названию категории
   status: pass
@@ -13,6 +18,9 @@ bugreports: []
 
 test-cases:
    - summary: |
+      Успешная фильтрация товаров по ключевому слову, названию категории, цене
+  status: pass
+  - summary: |
       Успешная фильтрация товаров по ключевому слову, названию категории, цене
   status: fail
 bugreports:
@@ -37,10 +45,16 @@ test-cases:
   - summary: |
       Успешное добавление товаров в корзину
   status: pass
+  - summary: |
+      Успешное добавление товаров в корзину
+  status: pass
 bugreports: []
 
 test-cases:
   - summary: |
+      Успешное оформление заказа с переходом на страницу оплаты
+    status: fail
+    - summary: |
       Успешное оформление заказа с переходом на страницу оплаты
     status: fail
  bugreports:
@@ -65,10 +79,16 @@ test-cases:
 test-cases:
   - summary: |
       Успешная проверка адаптивной верстки сайта для мобильных устройств
+  status: fail
+   - summary: |
+      Успешная проверка адаптивной верстки сайта для мобильных устройств
   status: pass
 bugreports: []
 
 test-cases:
+  - summary: |
+      Успешная проверка хранения корзины в сессии браузера.
+    status: pass
   - summary: |
       Успешная проверка хранения корзины в сессии браузера.
     status: pass
