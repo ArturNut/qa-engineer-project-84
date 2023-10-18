@@ -34,13 +34,13 @@ bugreports:
     environment: |
       Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
       ОС Windows 7
-    steps-to-reproduce: |
+    steps-to-reproduce:
       1. Открыта страница https://hexlet-products-store.vercel.app/
       2. Поле ввода Search пустое
-      # 3. Флажок установлен на слове In Stock
-      # 4. Вводим слово Perfume в поле Search
-      # 5. Выбираем в списке Category слово laptops
-      # 6. В метке Price в полях From-To устанавливаем 0 и 1
+      3. Флажок установлен на слове In Stock
+      4. Вводим слово Perfume в поле Search
+      5. Выбираем в списке Category слово laptops
+      6. В метке Price в полях From-To устанавливаем 0 и 1
     expected-result: |
       На странице должны быть показан товары с ключевым словом в названии, из вывбранной категории, с ценой из нужного диапазона
     actual-result: |
@@ -51,12 +51,12 @@ bugreports:
     environment: |
       Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
       ОС Windows 7
-    steps-to-reproduce: |
+    steps-to-reproduce:
       1. Открыта страница https://hexlet-products-store.vercel.app
       2. На странице, на любом одном товаре нажимаем на кнопку "Add to cart" 
-      # 3. В шапке этой же страницы нажимаем на слово "Cart" попадаем в корзину 
-      # 4. В корзине нажимаем конпку "Checkout" появляется всплывающее окно "Order placed successfully" 
-      # 5. В окне "Order placed successfully" видим сообщение "Order placed successfully"    
+      3. В шапке этой же страницы нажимаем на слово "Cart" попадаем в корзину 
+      4. В корзине нажимаем конпку "Checkout" появляется всплывающее окно "Order placed successfully" 
+      5. В окне "Order placed successfully" видим сообщение "Order placed successfully"    
     expected-result: |
       В окне "Order placed successfully" есть возможность для перехода на страницу оплаты       
     actual-result: |
