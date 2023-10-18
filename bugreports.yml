@@ -8,15 +8,13 @@
     1. Открыта страница https://hexlet-products-store.vercel.app
     2. На странице, на любом одном товаре нажимаем на кнопку "Add to cart"
     3. В шапке этой же страницы нажимаем на слово "Cart" попадаем в корзину
-    4. На странице карзины Cart нет кнопки для перехода на страницу оплаты
     5. В корзине нажимаем конпку "Checkout" появляется всплывающее окно "Order placed successfully"
-    6. В окне "Order placed successfully" видим сообщение "Order placed successfully"
-    7. В окне "Order placed successfully" нет кнопки для перехода на страницу оплаты
+    6. В окне "Order placed successfully" видим сообщение "Order placed successfully"    
   expected-result: |
-    Есть возможность оформление заказа с переходом на страницу оплаты.    
+    Нет возможности перехода на страницу оплаты.    
   actual-result: |
-    В окне "Order placed successfully" нет кнопки для перехода на страницу оплаты
-    На странице карзины Cart нет кнопки для перехода на страницу оплаты
+    В окне "Order placed successfully" есть возможность для перехода на страницу оплаты
+    Ошибка изображена на скриншоте qa-engineer-project-84/Payment page.png
     
 - summary: |
     Изменяется url в адресной строке браузера, не работают вкладки LOBBY/TOURNAMENT/COMPLETED GAMES
