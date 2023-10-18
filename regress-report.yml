@@ -37,10 +37,10 @@ bugreports:
     steps-to-reproduce: |
       1. Открыта страница https://hexlet-products-store.vercel.app/
       2. Поле ввода Search пустое
-      3. Флажок установлен на слове In Stock
-      4. Вводим слово Perfume в поле Search
-      5. Выбираем в списке Category слово laptops
-      6. В метке Price в полях From-To устанавливаем 0 и 1
+      # 3. Флажок установлен на слове In Stock
+      # 4. Вводим слово Perfume в поле Search
+      # 5. Выбираем в списке Category слово laptops
+      # 6. В метке Price в полях From-To устанавливаем 0 и 1
     expected-result: |
       На странице должны быть показан товары с ключевым словом в названии, из вывбранной категории, с ценой из нужного диапазона
     actual-result: |
