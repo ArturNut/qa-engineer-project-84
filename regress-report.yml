@@ -1,6 +1,5 @@
 ---
 test-cases:
-
   - summary: |
       Успешный поиск товаров по ключевому слову
     status: pass
@@ -29,38 +28,3 @@ test-cases:
       Успешная проверка хранения корзины в сессии браузера.
     status: pass
     
-bugreports:
-
-  - summary: |
-      фильтрация товаров с ошибкой
-    environment: |
-      Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
-      ОС Windows 7
-    steps-to-reproduce:
-      - Открыта страница https://hexlet-products-store.vercel.app
-      - Поле ввода "Search" пустое
-      - Флажок установлен на слове "In Stock"
-      - Вводим слово Perfume в поле Search
-      - Выбираем в списке Category слово laptops
-      - В метке "Price" в полях "From-To" устанавливаем 0 и 1
-    expected-result: >
-      На странице должны быть показан товары с ключевым словом в названии, из вывбранной категории, с ценой из нужного диапазона
-    actual-result: >
-      При вводе цены на странице показаны товары не соответствующие ключевому слову, названию категории и цене
-      
-  - summary: >
-      Не реализовано требование оформление заказа с переходом на страницу оплаты.
-    environment: |
-      Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
-      ОС Windows 7
-    steps-to-reproduce: >
-      1. Открыта страница https://hexlet-products-store.vercel.app
-      2. На странице, на любом одном товаре нажимаем на кнопку "Add to cart"
-      3. В шапке этой же страницы нажимаем на слово "Cart" попадаем в корзину
-      4. В корзине нажимаем конпку "Checkout" появляется всплывающее окно "Order placed successfully"
-      5. В окне "Order placed successfully" видим сообщение "Order placed successfully"    
-    expected-result: |
-      Нет возможности перехода на страницу оплаты.    
-    actual-result: >
-      В окне "Order placed successfully" есть возможность для перехода на страницу оплаты
-      Ошибка изображена на скриншоте qa-engineer-project-84/Payment page.png
