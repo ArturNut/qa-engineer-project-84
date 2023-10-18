@@ -15,3 +15,20 @@
   actual-result: |
     В окне "Order placed successfully" есть возможность для перехода на страницу оплаты
     Ошибка изображена на скриншоте qa-engineer-project-84/Payment page.png
+
+- summary: |
+    - Адаптивность страницы товаров для мобильных устройств. Неудобные поля.   
+  environment: |
+    Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
+    ОС Windows 7
+  steps-to-reproduce: |
+    1. Открыта страница https://hexlet-products-store.vercel.app 
+    2. Открываем DevTools (Сtrl + Schft + I)
+    3. Переходим в DevTools выбираем кнопку Toggle device toolbar (Ctrl + Schift + M)
+    4. Переходим в Google Chrom
+    5. В верхнем меню DevTools выбираем в списке "Dimensions" значение iPhone SE   
+  expected-result: |
+    Нет возможности перехода на страницу оплаты.    
+  actual-result: |
+    В левом борде в метке "Price" в полях "From-To" поля маленькие не видно значений
+    Ошибка изображена на скриншоте qa-engineer-project-84/Price From To.png
