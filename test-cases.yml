@@ -64,20 +64,25 @@
     В корзине добавлен выбранный товар
     ############################################5555555555555555
     - summary: |
-    Успешная проверка работы сайта на различных устройствах
+    Успешная проверка адаптивной верстки сайта для мобильных устройств
   requirement: |
-    Страницы сайта открываться различных устройствах на разных разрешениях и подстраиваться под них  
+    Страницы сайта удобны при просмотре на мобильных устройствах  
   prerequisites:
-    - Браузер Google Chrom
-    - Открыта страница https://hexlet-products-store.vercel.app   
+    - Инструмент Google Mobile-Friendly Test
+    - Открыта страница https://search.google.com/test/mobile-friendly 
   test-data: |
-    No data
+   Страница товаров URL: https://hexlet-products-store.vercel.app/
+   Корзина товаров URL: https://hexlet-products-store.vercel.app/cart
+   Страница товара URL: https://hexlet-products-store.vercel.app/products/1
   steps:
-    - Открываем DevTools (Сtrl + Schft + I)
-    - Переходим в DevTools нажимаем на значек в левом верхне углу toggle divice toolbar (Ctrl + Schift + M)
-    - Переходим в Google Crom в верхнем меню DevTools в списке Dimensions выбираем устройство    
+    - на странице https://search.google.com/test/mobile-friendly в поле "Введите URL" вводим https://hexlet-products-store.vercel.app/
+    - Видим результат проверки "Страница удобна при просмотре на мобильных устройствах"
+    - на странице https://search.google.com/test/mobile-friendly в поле "Введите URL" вводим https://hexlet-products-store.vercel.app/cart
+    - Видим результат проверки "Страница удобна при просмотре на мобильных устройствах"
+    - на странице https://search.google.com/test/mobile-friendly в поле "Введите URL" вводим https://hexlet-products-store.vercel.app/products/1
+    - Видим результат проверки "Страница удобна при просмотре на мобильных устройствах"        
   expected-result: |
-   Страницы сайта открываться различных устройствах на разных разрешениях и подстраиваться под них 
+   Страницы сайта удобны для мобильных устройств
        ############################################6666666666666666666666666
     - summary: |
     Проверка хранения корзины в сессии браузера.
