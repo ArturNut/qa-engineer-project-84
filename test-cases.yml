@@ -45,8 +45,8 @@
     - Список Category = fragrances
     - В метке "Price" счетчик From = 10 и счетчик To = 20  
   steps:
-    - Вводим слово Lamp в поле Search
-    - Выбираем в списке Category слово laptops
+    - Вводим слово Perfume в поле Search
+    - Выбираем в списке Category слово fragrances
     - В метке "Price" в полях "From-To" устанавливаем 10 и 20
   expected-result: >
     На странице должны быть показан товары с ключевым словом в
