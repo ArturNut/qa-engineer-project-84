@@ -1,6 +1,6 @@
 ---
 test-cases:
-  - summary: |
+   - summary: |
       Успешный поиск товаров по ключевому слову
     status: pass
     
@@ -35,12 +35,12 @@ bugreports:
       Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
       ОС Windows 7
     steps-to-reproduce: |
-      - Открыта страница https://hexlet-products-store.vercel.app
-      - Поле ввода "Search" пустое
-      - Флажок установлен на слове "In Stock"
-      - Вводим слово Perfume в поле Search
-      - Выбираем в списке Category слово laptops
-      - В метке "Price" в полях "From-To" устанавливаем 0 и 1
+      1. Открыта страница "https://hexlet-products-store.vercel.app"
+      2. Поле ввода "Search" пустое
+      3. Флажок установлен на слове "In Stock"
+      4. Вводим слово Perfume в поле Search
+      5. Выбираем в списке Category слово laptops
+      6. В метке "Price" в полях "From-To" устанавливаем 0 и 1
     expected-result: |
       На странице должны быть показан товары с ключевым словом в названии, из вывбранной категории, с ценой из нужного диапазона
     actual-result: |
