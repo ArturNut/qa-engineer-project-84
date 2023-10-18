@@ -29,35 +29,35 @@ test-cases:
      status: pass
     
 bugreports:
-  - summary: |
+   - summary: |
       фильтрация товаров с ошибкой
-    environment: |
+     environment: |
       Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
       ОС Windows 7
-    steps-to-reproduce: >
-      Открыта страница https://hexlet-products-store.vercel.app, 
-      Поле ввода Search пустое, Флажок установлен на слове In Stock, 
-      Вводим слово Perfume в поле Search,
-      Выбираем в списке Category слово laptops,
-      В метке Price в полях From-To устанавливаем 0 и 1
-    expected-result: |
+     steps-to-reproduce: |
+      1. Открыта страница https://hexlet-products-store.vercel.app, 
+      2. Поле ввода Search пустое, Флажок установлен на слове In Stock, 
+      3. Вводим слово Perfume в поле Search,
+      4. Выбираем в списке Category слово laptops,
+      5. В метке Price в полях From-To устанавливаем 0 и 1
+     expected-result: |
       На странице должны быть показан товары с ключевым словом в названии, из вывбранной категории, с ценой из нужного диапазона
-    actual-result: |
+     actual-result: |
       При вводе цены на странице показаны товары не соответствующие ключевому слову, названию категории и цене
       
-  - summary: |
+   - summary: |
       Не реализовано требование оформление заказа с переходом на страницу оплаты.
-    environment: |
+     environment: |
       Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
       ОС Windows 7
-    steps-to-reproduce:|
+     steps-to-reproduce: |
       1. Открыта страница https://hexlet-products-store.vercel.app
       2. На странице, на любом одном товаре нажимаем на кнопку "Add to cart" 
       3. В шапке этой же страницы нажимаем на слово "Cart" попадаем в корзину 
       4. В корзине нажимаем конпку "Checkout" появляется всплывающее окно "Order placed successfully" 
       5. В окне "Order placed successfully" видим сообщение "Order placed successfully"    
-    expected-result: |
+     expected-result: |
       В окне "Order placed successfully" есть возможность для перехода на страницу оплаты       
-    actual-result: |
+     actual-result: |
       Нет возможности перехода на страницу оплаты.   
       Ошибка изображена на скриншоте qa-engineer-project-84/Payment page.png
