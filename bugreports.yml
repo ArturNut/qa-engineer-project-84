@@ -28,7 +28,7 @@
     4. Переходим в Google Chrom
     5. В верхнем меню DevTools выбираем в списке "Dimensions" значение iPhone SE   
   expected-result: |
-    Нет возможности перехода на страницу оплаты.    
+    В полях ввода должны быть видны значения 
   actual-result: |
     В левом борде в метке "Price" в полях "From-To" поля маленькие не видно значений
     Ошибка изображена на скриншоте qa-engineer-project-84/Price From To.png
