@@ -4,10 +4,10 @@
     Успешный поиск товаров по ключевому слову
   requirement: |
     На странице должен быть показан товар, с ключевым словом в названии
-  prerequisites: |
-    - Открыта страница https://hexlet-products-store.vercel.app
-    - Поле ввода "Search" пустое
-    - Флажок установлен на слове "In Stock"
+  prerequisites:
+    Открыта страница https://hexlet-products-store.vercel.app
+    Поле ввода "Search" пустое
+    Флажок установлен на слове "In Stock"
   test-data: |
     Поле Search = Lamp 
   steps:
@@ -20,9 +20,9 @@
   requirement: |
     На странице должын быть показаны товары из выбранной категории
   prerequisites:
-    - Открыта страница https://hexlet-products-store.vercel.app
-    - Поле ввода "Search" пустое
-    - Флажок установлен на слове "In Stock"
+    Открыта страница https://hexlet-products-store.vercel.app
+    Поле ввода "Search" пустое
+    Флажок установлен на слове "In Stock"
   test-data: |
     Список Category = laptops
   steps:
@@ -37,9 +37,9 @@
     должны быть показаны товары с ключевым словом в названии, из вывбранной
     категории, с ценой из нужного диапазона
   prerequisites:
-    - Открыта страница https://hexlet-products-store.vercel.app
-    - Поле ввода "Search" пустое
-    - Флажок установлен на слове "In Stock"
+    Открыта страница https://hexlet-products-store.vercel.app
+    Поле ввода "Search" пустое
+    Флажок установлен на слове "In Stock"
   test-data: |
     - Поле Search = Perfume
     - Список Category = fragrances
@@ -57,8 +57,8 @@
   requirement: |
     В корзину пользователя добавлен выбранный товар
   prerequisites:
-    - Открыта страница https://hexlet-products-store.vercel.app
-    - Флажок установлен на слове "In Stock"
+    Открыта страница https://hexlet-products-store.vercel.app
+    Флажок установлен на слове "In Stock"
   test-data: |
     - No data
   steps:
@@ -72,8 +72,8 @@
   requirement: >
     После успешного оформления заказа есть возможность передти на страницу оплаты
   prerequisites:
-    - Открыта страница корзины https://hexlet-products-store.vercel.app/cart
-    - В корзине есть товар
+    Открыта страница корзины https://hexlet-products-store.vercel.app/cart
+    В корзине есть товар
   test-data: |
     No data 
   steps:
@@ -89,8 +89,8 @@
     Основной контент дублируется на всех разрешениях экрана 
     Дизайн и функционал сайта не меняться на разных разрешениях экрана
   prerequisites:
-    - Браузер Google Chrom
-    - Открыта страница https://hexlet-products-store.vercel.app
+    Браузер Google Chrom
+    Открыта страница https://hexlet-products-store.vercel.app
   test-data: |
     Устройство iPhone SE
   steps:
@@ -123,9 +123,9 @@
     коризну, переход в коризину, удаление товаров из корзины, проверка заказа в
     корзине.  
   prerequisites:
-    - Браузер Google Chrom
-    - Открыта страница https://hexlet-products-store.vercel.app
-    - Корзина товаров "Cart" пустая
+    Браузер Google Chrom
+    Открыта страница https://hexlet-products-store.vercel.app
+    Корзина товаров "Cart" пустая
   test-data: |
     No data
   steps:
