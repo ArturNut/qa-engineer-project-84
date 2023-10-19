@@ -35,7 +35,7 @@ bugreports:
       Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
       ОС Windows 7
     steps-to-reproduce: |
-      1. Открыта страница https://hexlet-products-store.vercel.app 
+      1. Открыта страница: https://hexlet-products-store.vercel.app 
       2. Поле ввода Search пустое
       3. Флажок установлен на слове In Stock
       4. Вводим слово Perfume в поле Search
@@ -52,7 +52,7 @@ bugreports:
       Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
       ОС Windows 7
     steps-to-reproduce: |
-      1. Открыта страница https://hexlet-products-store.vercel.app
+      1. Открыта страница: https://hexlet-products-store.vercel.app
       2. На странице, на любом одном товаре нажимаем на кнопку "Add to cart" 
       3. В шапке этой же страницы нажимаем на слово "Cart" попадаем в корзину 
       4. В корзине нажимаем конпку "Checkout" появляется всплывающее окно "Order placed successfully" 
