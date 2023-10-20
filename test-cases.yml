@@ -5,9 +5,9 @@
   requirement: |
     На странице должен быть показан товар, с ключевым словом в названии
   prerequisites:
-    Открыта страница https://hexlet-products-store.vercel.app
+    https://hexlet-products-store.vercel.app
     Поле ввода "Search" пустое
-    Флажок установлен на слове "In Stock"
+    Фильтр In Stock включен
   test-data: |
     Поле Search = Lamp 
   steps:
@@ -20,9 +20,9 @@
   requirement: |
     На странице должын быть показаны товары из выбранной категории
   prerequisites:
-    Открыта страница https://hexlet-products-store.vercel.app
+    https://hexlet-products-store.vercel.app
     Поле ввода "Search" пустое
-    Флажок установлен на слове "In Stock"
+    Фильтр In Stock включен
   test-data: |
     Список Category = laptops
   steps:
@@ -37,9 +37,9 @@
     должны быть показаны товары с ключевым словом в названии, из вывбранной
     категории, с ценой из нужного диапазона
   prerequisites:
-    Открыта страница https://hexlet-products-store.vercel.app
+    https://hexlet-products-store.vercel.app
     Поле ввода "Search" пустое
-    Флажок установлен на слове "In Stock"
+    Фильтр In Stock включен
   test-data: |
     - Поле Search = Perfume
     - Список Category = fragrances
@@ -57,8 +57,8 @@
   requirement: |
     В корзину пользователя добавлен выбранный товар
   prerequisites:
-    Открыта страница https://hexlet-products-store.vercel.app
-    Флажок установлен на слове "In Stock"
+    https://hexlet-products-store.vercel.app
+    Фильтр In Stock включен
   test-data: |
     - No data
   steps:
@@ -72,7 +72,7 @@
   requirement: >
     После успешного оформления заказа есть возможность передти на страницу оплаты
   prerequisites:
-    Открыта страница корзины https://hexlet-products-store.vercel.app/cart
+    https://hexlet-products-store.vercel.app/cart
     В корзине есть товар
   test-data: |
     No data 
@@ -124,7 +124,7 @@
     корзине.  
   prerequisites:
     Браузер Google Chrom
-    Открыта страница https://hexlet-products-store.vercel.app
+    https://hexlet-products-store.vercel.app
     Корзина товаров "Cart" пустая
   test-data: |
     No data
