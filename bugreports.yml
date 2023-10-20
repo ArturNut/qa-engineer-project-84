@@ -5,11 +5,11 @@
     Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
     ОС Windows 7
   steps-to-reproduce:
-    DevTools
-    https://hexlet-products-store.vercel.app
-    На любом одном товаре нажимаем на кнопку "Add to cart"
-    В шапке нажимаем на слово "Cart"
-    Нажимаем конпку "Checkout"        
+    - DevTools
+    - https://hexlet-products-store.vercel.app
+    - На любом одном товаре нажимаем на кнопку "Add to cart"
+    - В шапке нажимаем на слово "Cart"
+    - Нажимаем конпку "Checkout"        
   expected-result: |
     Успешная проверка оформления заказа    
   actual-result: |  
@@ -21,11 +21,11 @@
     Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
     ОС Windows 7
   steps-to-reproduce:
-    https://hexlet-products-store.vercel.app 
-    Окрыть Dev Tools
-    Открыть симуляцию моб девайса
-    Выбрать iPhone SE
-    Нажать Rotate
+    - https://hexlet-products-store.vercel.app 
+    - Окрыть Dev Tools
+    - Открыть симуляцию моб девайса
+    - Выбрать iPhone SE
+    - Нажать Rotate
   expected-result: |
     сайт адаптирован под мобильные девайсы
   actual-result: |
@@ -38,9 +38,9 @@
     Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
     ОС Windows 7
   steps-to-reproduce:
-    https://hexlet-products-store.vercel.app
-    В шапке нажать на список "Language"
-    Выбрать "Russian"
+    - https://hexlet-products-store.vercel.app
+    - В шапке нажать на список "Language"
+    - Выбрать "Russian"
   expected-result: |
     Элементы интерфейса сайта, категори, описание товаров отображаются на русском языке
   actual-result: |
@@ -53,9 +53,9 @@
     Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
     ОС Windows 7
   steps-to-reproduce:
-    Ввести в поле поиска товаров "HP"
-    Выбрать товар "HP Pavilion 15-DK1056WM"
-    Перейти по ссылке #laptops
+    - Ввести в поле поиска товаров "HP"
+    - Выбрать товар "HP Pavilion 15-DK1056WM"
+    - Перейти по ссылке #laptops
   expected-result: |
     Успешный переход по ссылке
   actual-result: |
@@ -67,8 +67,8 @@
     Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
     ОС Windows 7
   steps-to-reproduce:
-    https://hexlet-products-store.vercel.app
-    В шапке нажать на список "Language"    
+    - https://hexlet-products-store.vercel.app
+    - В шапке нажать на список "Language"    
   expected-result: |
     Значек отображается
   actual-result: |
