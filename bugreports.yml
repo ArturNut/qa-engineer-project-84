@@ -31,3 +31,45 @@
   actual-result: |
     сайт не адаптирован под мобильные девайсы
     Ошибка изображена на скриншоте qa-engineer-project-84/Screenshots/Price From To.png
+
+    - summary: |
+    Мультиязычность сайта работает некорректно
+  environment: |
+    Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
+    ОС Windows 7
+  steps-to-reproduce: |
+    1. https://hexlet-products-store.vercel.app
+    2. В шапке нажать на список "Language"
+    3. Выбрать "Russian"
+  expected-result: |
+    Элементы интерфейса сайта, категори, описание товаров отображаются на русском языке
+  actual-result: |
+    Каточки с описанием товаров не переведены на русский язык
+    Категории товаров не переведены на русский язык
+
+    - summary: |
+    Не работает ссылка на странице товара
+  environment: |
+    Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
+    ОС Windows 7
+  steps-to-reproduce: |
+    1. Ввести в поле поиска товаров "HP"
+    2. Выбрать товар "HP Pavilion 15-DK1056WM"
+    3. Перейти по ссылке #laptops
+  expected-result: |
+    Успешный переход по ссылке
+  actual-result: |
+    Не успешный перехода по ссылке
+
+     - summary: |
+    Не отображается значек флаг на против слова "English" при выборе языка
+  environment: |
+    Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
+    ОС Windows 7
+  steps-to-reproduce: |
+    1. https://hexlet-products-store.vercel.app
+    2. В шапке нажать на список "Language"    
+  expected-result: |
+    Значек отображается
+  actual-result: |
+    Значек не отображается
