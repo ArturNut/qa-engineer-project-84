@@ -38,7 +38,7 @@ bugreports:
       1. https://hexlet-products-store.vercel.app
       2. Поле Search пустое
       3. Фильтр In Stock включен
-      4. Вводим слово напримаер Perfume в поле Search
+      4. В поле Search вводим слово напримаер Perfume 
       5. Выбираем в списке Category слово например laptops
       6. В метке Price в полях From-To устанавливаем например 0 и 1
     expected-result: |
@@ -46,18 +46,33 @@ bugreports:
     actual-result: |
       Не отображаются товары согласно введенному запросу
       
-- summary: |
-    - При оформление заказа код ответа сервера 500.
-  environment: |
-    Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
-    ОС Windows 7
-  steps-to-reproduce: |
-    1. DevTools
-    2. https://hexlet-products-store.vercel.app
-    3. На любом одном товаре нажимаем на кнопку "Add to cart"
-    4. В шапке нажимаем на слово "Cart"
-    5. Нажимаем конпку "Checkout"        
-  expected-result: |
-    Успешная проверка оформления заказа    
-  actual-result: |
-    Ошибка изображена на скриншоте qa-engineer-project-84/Screenshots/500 Internal Server Error version 2.png
+  - summary: |
+      - При оформление заказа код ответа сервера 500.
+    environment: |
+      Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
+      ОС Windows 7
+    steps-to-reproduce: |
+      1. DevTools
+      2. https://hexlet-products-store.vercel.app
+      3. На любом одном товаре нажимаем на кнопку "Add to cart"
+      4. В шапке нажимаем на слово "Cart"
+      5. Нажимаем конпку "Checkout"        
+    expected-result: |
+      Успешная проверка оформления заказа    
+    actual-result: |
+      Ошибка изображена на скриншоте qa-engineer-project-84/Screenshots/500 Internal Server Error version 2.png
+
+  - summary: |
+      Мультиязычность сайта работает некорректно
+    environment: |
+      Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
+      ОС Windows 7
+    steps-to-reproduce: |
+      1. https://hexlet-products-store.vercel.app
+      2. В шапке нажать на список "Language"
+      3. Выбрать "Russian"
+    expected-result: |
+      Элементы интерфейса сайта, категори, описание товаров отображаются на русском языке
+    actual-result: |
+      Каточки с описанием товаров не переведены на русский язык
+      Категории товаров не переведены на русский язык
