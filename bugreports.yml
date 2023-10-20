@@ -1,34 +1,33 @@
 ---
 - summary: |
-    - Не реализовано требование оформление заказа с переходом на страницу оплаты.
+    - При оформление заказа код ответа сервера 500.
   environment: |
     Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
     ОС Windows 7
   steps-to-reproduce: |
-    1. Открыта страница https://hexlet-products-store.vercel.app
-    2. На странице, на любом одном товаре нажимаем на кнопку "Add to cart"
-    3. В шапке этой же страницы нажимаем на слово "Cart" попадаем в корзину
-    5. В корзине нажимаем конпку "Checkout" появляется всплывающее окно "Order placed successfully"
-    6. В окне "Order placed successfully" видим сообщение "Order placed successfully"    
+    1. DevTools
+    2. https://hexlet-products-store.vercel.app
+    3. На любом одном товаре нажимаем на кнопку "Add to cart"
+    4. В шапке нажимаем на слово "Cart"
+    5. Нажимаем конпку "Checkout"        
   expected-result: |
-    Нет возможности перехода на страницу оплаты.    
+    Успешная проверка оформления заказа    
   actual-result: |
-    В окне "Order placed successfully" есть возможность для перехода на страницу оплаты
-    Ошибка изображена на скриншоте qa-engineer-project-84/Payment page.png
+    Ошибка изображена на скриншоте qa-engineer-project-84/Screenshots/500 Internal Server Error.png
 
 - summary: |
-    - Адаптивность страницы товаров для мобильных устройств. Неудобные поля.   
+    - Не реализована мобильная версия сайта   
   environment: |
     Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
     ОС Windows 7
   steps-to-reproduce: |
-    1. Открыта страница https://hexlet-products-store.vercel.app 
-    2. Открываем DevTools (Сtrl + Schft + I)
-    3. Переходим в DevTools выбираем кнопку Toggle device toolbar (Ctrl + Schift + M)
-    4. Переходим в Google Chrom
-    5. В верхнем меню DevTools выбираем в списке "Dimensions" значение iPhone SE   
+    1. https://hexlet-products-store.vercel.app 
+    2. Окрыть Dev Tools
+    3. Открыть симуляцию моб девайса
+    4. Выбрать iPhone SE
+    5. Нажать Rotate
   expected-result: |
-    В полях ввода должны быть видны значения 
+    сайт адаптирован под мобильные девайсы
   actual-result: |
-    В левом борде в метке "Price" в полях "From-To" поля маленькие не видно значений
-    Ошибка изображена на скриншоте qa-engineer-project-84/Price From To.png
+    сайт не адаптирован под мобильные девайсы
+    Ошибка изображена на скриншоте qa-engineer-project-84/Screenshots/Price From To.png
