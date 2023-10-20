@@ -9,7 +9,7 @@ test-cases:
     status: pass
     
   - summary: |
-      Успешная фильтрация товаров по ключевому слову, названию категории, цене
+      Проверка фильтрации товара по названию, категории и цене
     status: fail
     
   - summary: |
@@ -17,15 +17,15 @@ test-cases:
     status: pass
     
   - summary: |
-      Успешное оформление заказа с переходом на страницу оплаты
+      Успешная проверка оформления заказа
     status: fail
     
   - summary: |
-      Успешная проверка адаптивной верстки сайта для мобильных устройств
+      Успешная проверка наличия адаптивной верстки
     status: pass
     
   - summary: |
-      Успешная проверка хранения корзины в сессии браузера.
+      Проверка хранения корзины в сессии браузера
     status: pass
     
 bugreports:
@@ -35,30 +35,29 @@ bugreports:
       Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
       ОС Windows 7
     steps-to-reproduce: | 
-      1. Открыта страница: https://hexlet-products-store.vercel.app
-      2. Поле ввода Search пустое
-      3. Флажок установлен на слове In Stock
-      4. Вводим слово Perfume в поле Search
-      5. Выбираем в списке Category слово laptops
-      6. В метке Price в полях From-To устанавливаем 0 и 1
+      1. https://hexlet-products-store.vercel.app
+      2. Поле Search пустое
+      3. Фильтр In Stock включен
+      4. Вводим слово напримаер Perfume в поле Search
+      5. Выбираем в списке Category слово например laptops
+      6. В метке Price в полях From-To устанавливаем например 0 и 1
     expected-result: |
       На странице должны быть показан товары с ключевым словом в названии, из вывбранной категории, с ценой из нужного диапазона
     actual-result: |
-      При вводе цены на странице показаны товары не соответствующие ключевому слову, названию категории и цене
+      Не отображаются товары согласно введенному запросу
       
-  - summary: |
-      Не реализовано требование оформление заказа с переходом на страницу оплаты.
-    environment: |
-      Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
-      ОС Windows 7
-    steps-to-reproduce: |
-      1. Открыта страница: https://hexlet-products-store.vercel.app
-      2. На странице, на любом одном товаре нажимаем на кнопку "Add to cart" 
-      3. В шапке этой же страницы нажимаем на слово "Cart" попадаем в корзину 
-      4. В корзине нажимаем конпку "Checkout" появляется всплывающее окно "Order placed successfully" 
-      5. В окне "Order placed successfully" видим сообщение "Order placed successfully"    
-    expected-result: |
-      В окне "Order placed successfully" есть возможность для перехода на страницу оплаты       
-    actual-result: |
-      Нет возможности перехода на страницу оплаты.   
-      Ошибка изображена на скриншоте qa-engineer-project-84/Payment page.png
+- summary: |
+    - При оформление заказа код ответа сервера 500.
+  environment: |
+    Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
+    ОС Windows 7
+  steps-to-reproduce: |
+    1. DevTools
+    2. https://hexlet-products-store.vercel.app
+    3. На любом одном товаре нажимаем на кнопку "Add to cart"
+    4. В шапке нажимаем на слово "Cart"
+    5. Нажимаем конпку "Checkout"        
+  expected-result: |
+    Успешная проверка оформления заказа    
+  actual-result: |
+    Ошибка изображена на скриншоте qa-engineer-project-84/Screenshots/500 Internal Server Error Version 2.png
