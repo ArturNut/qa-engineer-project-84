@@ -4,15 +4,15 @@
   environment: |
     Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
     ОС Windows 7
-  steps-to-reproduce: |
-    1. DevTools
-    2. https://hexlet-products-store.vercel.app
-    3. На любом одном товаре нажимаем на кнопку "Add to cart"
-    4. В шапке нажимаем на слово "Cart"
-    5. Нажимаем конпку "Checkout"        
+  steps-to-reproduce:
+    DevTools
+    https://hexlet-products-store.vercel.app
+    На любом одном товаре нажимаем на кнопку "Add to cart"
+    В шапке нажимаем на слово "Cart"
+    Нажимаем конпку "Checkout"        
   expected-result: |
     Успешная проверка оформления заказа    
-  actual-result: |
+  actual-result: |  
     Ошибка изображена на скриншоте qa-engineer-project-84/Screenshots/500 Internal Server Error.png
 
 - summary: |
@@ -20,12 +20,12 @@
   environment: |
     Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
     ОС Windows 7
-  steps-to-reproduce: |
-    1. https://hexlet-products-store.vercel.app 
-    2. Окрыть Dev Tools
-    3. Открыть симуляцию моб девайса
-    4. Выбрать iPhone SE
-    5. Нажать Rotate
+  steps-to-reproduce:
+    https://hexlet-products-store.vercel.app 
+    Окрыть Dev Tools
+    Открыть симуляцию моб девайса
+    Выбрать iPhone SE
+    Нажать Rotate
   expected-result: |
     сайт адаптирован под мобильные девайсы
   actual-result: |
@@ -37,10 +37,10 @@
   environment: |
     Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
     ОС Windows 7
-  steps-to-reproduce: |
-    1. https://hexlet-products-store.vercel.app
-    2. В шапке нажать на список "Language"
-    3. Выбрать "Russian"
+  steps-to-reproduce:
+    https://hexlet-products-store.vercel.app
+    В шапке нажать на список "Language"
+    Выбрать "Russian"
   expected-result: |
     Элементы интерфейса сайта, категори, описание товаров отображаются на русском языке
   actual-result: |
@@ -52,10 +52,10 @@
   environment: |
     Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
     ОС Windows 7
-  steps-to-reproduce: |
-    1. Ввести в поле поиска товаров "HP"
-    2. Выбрать товар "HP Pavilion 15-DK1056WM"
-    3. Перейти по ссылке #laptops
+  steps-to-reproduce:
+    Ввести в поле поиска товаров "HP"
+    Выбрать товар "HP Pavilion 15-DK1056WM"
+    Перейти по ссылке #laptops
   expected-result: |
     Успешный переход по ссылке
   actual-result: |
@@ -66,9 +66,9 @@
   environment: |
     Google Chrome Версия 109.0.5414.120 (Официальная сборка), (32 бит)
     ОС Windows 7
-  steps-to-reproduce: |
-    1. https://hexlet-products-store.vercel.app
-    2. В шапке нажать на список "Language"    
+  steps-to-reproduce:
+    https://hexlet-products-store.vercel.app
+    В шапке нажать на список "Language"    
   expected-result: |
     Значек отображается
   actual-result: |
